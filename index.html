@@ -24,6 +24,8 @@
 
             --text-dark-primary: #000000;
             --text-dark-secondary: #333333;
+            --text-light-gray: #666666;
+            --text-medium-gray: #555555;
             --text-on-accent-light: #ffffff;
 
             --border-light: #e5e5e5;
@@ -303,7 +305,13 @@
             font-weight: 800; 
             line-height: 1.1; 
             margin-bottom: 30px; 
-            color: var(--text-dark-primary); 
+            background: linear-gradient(135deg, #000000 0%, #2c2c2c 50%, #000000 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
         .hero-title .line { display: block; overflow: hidden; }
@@ -319,11 +327,16 @@
         }
 
         .gradient-text-hero { 
-            color: #000000; 
+            background: linear-gradient(135deg, #000000 0%, #444444 50%, #000000 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
         }
         
         .gradient-text {
-            background: linear-gradient(90deg, #000000, #333333);
+            background: linear-gradient(90deg, #000000 0%, #333333 50%, #000000 100%);
             -webkit-background-clip: text;
             -moz-background-clip: text;
             background-clip: text;
@@ -333,7 +346,12 @@
 
         .hero-subtitle {
             font-size: clamp(1.15rem, 2.8vw, 1.5rem); 
-            color: var(--text-dark-secondary);
+            background: linear-gradient(135deg, #444444 0%, #666666 50%, #444444 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
             margin-bottom: 50px; 
             opacity: 0;
             transform: translateY(40px); 
@@ -426,7 +444,7 @@
 
         .section-label {
             font-size: 0.8rem; 
-            color: var(--accent-blue-primary);
+            color: #000000;
             text-transform: uppercase;
             letter-spacing: 2px; 
             margin-bottom: 12px; 
@@ -439,12 +457,22 @@
             font-weight: 700; 
             line-height: 1.25;
             margin-bottom: 15px;
-            color: var(--text-dark-primary);
+            background: linear-gradient(135deg, #000000 0%, #333333 50%, #000000 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
         }
 
         .section-subtitle {
             font-size: clamp(1rem, 2.1vw, 1.2rem); 
-            color: var(--text-dark-secondary);
+            background: linear-gradient(135deg, #555555 0%, #777777 50%, #555555 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
             max-width: 700px; 
             margin: 0 auto;
             line-height: 1.65;
@@ -479,7 +507,7 @@
             display: block;
             font-size: clamp(2.8rem, 7vw, 4.2rem); 
             font-weight: 700;
-            color: var(--accent-blue-primary); 
+            color: #000000; 
             margin-bottom: 8px;
             line-height: 1;
         }
@@ -545,10 +573,20 @@
             font-size: 1.15rem; 
             font-weight: 600;
             margin-bottom: 10px; 
-            color: var(--text-dark-primary);
+            background: linear-gradient(135deg, #000000 0%, #444444 50%, #000000 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
         }
         .feature-description {
-            color: var(--text-dark-secondary);
+            background: linear-gradient(135deg, #555555 0%, #666666 50%, #555555 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
             font-size: 0.9rem;
             line-height: 1.6;
         }
@@ -577,10 +615,9 @@
             left: 50%;
             transform: translateX(-50%);
             width: 200px;
-            height: 2px;
-            background: linear-gradient(90deg, transparent, var(--accent-blue-primary), var(--accent-blue-secondary), transparent);
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #000000, transparent);
             opacity: 0.3;
-            animation: gradientSlide 3s ease-in-out infinite;
         }
         
         @keyframes gradientSlide {
@@ -612,7 +649,7 @@
             left: 0;
             right: 0;
             height: 1px;
-            background: linear-gradient(90deg, transparent, var(--accent-blue-primary), transparent);
+            background: linear-gradient(90deg, transparent, #000000, transparent);
             opacity: 0;
             animation: slideInLine 1.5s ease-out 0.5s forwards;
         }
@@ -633,7 +670,12 @@
        
         .product-intro-content .product-title {
             font-size: clamp(1.8rem, 4vw, 2.6rem);
-            color: var(--accent-blue-primary);
+            background: linear-gradient(135deg, #000000 0%, #2c2c2c 50%, #000000 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
             margin-bottom: 12px;
             font-weight: 700;
             word-wrap: break-word;
@@ -644,7 +686,12 @@
         }
         .product-intro-content .product-subtitle {
             font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-            color: var(--text-dark-secondary);
+            background: linear-gradient(135deg, #444444 0%, #555555 50%, #444444 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
             margin-bottom: 18px;
             font-weight: 500;
             word-wrap: break-word;
@@ -652,7 +699,12 @@
         }
         .product-intro-content .product-description {
             font-size: 1rem;
-            color: var(--text-dark-secondary);
+            background: linear-gradient(135deg, #555555 0%, #666666 50%, #555555 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
             line-height: 1.7;
             margin-bottom: 15px; 
             word-wrap: break-word;
@@ -667,16 +719,16 @@
             align-items: center;
             gap: 8px;
             padding: 10px 20px;
-            background: var(--accent-blue-primary);
-            color: var(--text-on-accent-light);
+            background: #000000;
+            color: #ffffff;
             text-decoration: none;
-            border-radius: 6px;
+            border-radius: 2px;
             font-weight: 500;
             font-size: 0.9rem;
             transition: all 0.3s ease;
         }
         .product-intro-content .product-cta:hover {
-            background: var(--accent-blue-secondary);
+            background: #333333;
             transform: translateY(-2px);
         }
 
@@ -864,7 +916,7 @@
         .product-variant-block {
             background: transparent; 
             border: none;
-            border-radius: 15px;
+            border-radius: 2px;
             padding: 25px;
             text-align: left; 
             transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s ease;
@@ -881,9 +933,9 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-            border: 1px solid rgba(var(--accent-blue-primary-rgb), 0.1);
-            border-radius: 15px;
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 2px;
             opacity: 0;
             transition: opacity 0.3s ease;
             pointer-events: none;
@@ -895,15 +947,15 @@
         
         .product-variant-block:hover {
             transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 20px 40px rgba(var(--accent-blue-primary-rgb), 0.15);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
         .product-variant-block img {
             width: 100%;
             height: 180px; 
             object-fit: cover; 
-            border-radius: 12px;
+            border-radius: 2px;
             margin-bottom: 20px;
-            background-color: var(--bg-light-section-alt);
+            background-color: #f8f9fa;
             transition: transform 0.4s ease, filter 0.4s ease;
             box-shadow: 0 8px 25px rgba(0,0,0,0.08);
         }
@@ -914,7 +966,12 @@
         }
         .product-variant-block h4 { 
             font-size: 1.05rem;
-            color: var(--text-dark-primary);
+            background: linear-gradient(135deg, #000000 0%, #333333 50%, #000000 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
             margin-bottom: 8px;
             font-weight: 600;
             word-break: break-word; 
@@ -925,7 +982,12 @@
         }
         .product-variant-block p { 
             font-size: 0.88rem; 
-            color: var(--text-dark-secondary);
+            background: linear-gradient(135deg, #555555 0%, #666666 50%, #555555 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
             line-height: 1.6;
             word-break: break-word; 
             overflow-wrap: break-word;
@@ -971,13 +1033,23 @@
 
         .contact-details-text-container h3 {
             font-size: 1.8rem;
-            color: var(--text-dark-primary);
+            background: linear-gradient(135deg, #000000 0%, #333333 50%, #000000 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
             margin-bottom: 20px;
             font-weight: 600;
         }
         .contact-details-text-container h4 {
             font-size: 1.4rem;
-            color: var(--accent-blue-primary);
+            background: linear-gradient(135deg, #000000 0%, #444444 50%, #000000 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
             margin-top: 30px;
             margin-bottom: 10px;
             font-weight: 500;
@@ -985,21 +1057,42 @@
 
         .contact-details-text-container p {
             font-size: 1rem;
-            color: var(--text-dark-secondary);
+            background: linear-gradient(135deg, #555555 0%, #666666 50%, #555555 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
             line-height: 1.8;
             margin-bottom: 8px;
         }
         .contact-details-text-container p strong {
-            color: var(--text-dark-primary);
+            background: linear-gradient(135deg, #000000 0%, #222222 50%, #000000 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
             font-weight: 500;
         }
          .contact-details-text-container a {
-            color: var(--accent-blue-secondary);
+            background: linear-gradient(135deg, #333333 0%, #000000 50%, #333333 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
+            font-weight: 500;
         }
         .contact-details-text-container a:hover {
-            color: var(--accent-blue-primary);
+            background: linear-gradient(135deg, #000000 0%, #444444 50%, #000000 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
             text-decoration: underline;
         }
 
@@ -1009,7 +1102,15 @@
             text-align: center;
             border-top: 1px solid var(--border-light);
         }
-        footer p { color: var(--text-dark-secondary); font-size: 0.8rem; }
+        footer p { 
+            background: linear-gradient(135deg, #666666 0%, #777777 50%, #666666 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+            font-size: 0.8rem; 
+        }
 
         @media (max-width: 768px) {
             nav { padding: 15px 20px; }
@@ -1132,6 +1233,7 @@
                 <li><a href="#features">VANTAGGI</a></li>
                 <li><a href="#stats">I NOSTRI NUMERI</a></li>
                 <li><a href="#products">PRODOTTI</a></li>
+                <li><a href="#gamma">GAMMA</a></li>
                 <li><a href="#contact">CONTATTI</a></li>
             </ul>
             <a href="#home" class="logo">
@@ -1146,6 +1248,7 @@
             <li><a href="#features">VANTAGGI</a></li>
             <li><a href="#stats">I NOSTRI NUMERI</a></li>
             <li><a href="#products">PRODOTTI</a></li>
+            <li><a href="#gamma">GAMMA</a></li>
             <li><a href="#contact">CONTATTI</a></li>
         </ul>
     </div>
@@ -1255,18 +1358,53 @@
                             I nastri trasportatori modulari prodotti dalla Bonfatti s.r.l. trovano la loro collocazione in molteplici settori. SONO ADATTI al trasporto di varie tipologie di prodotti, sia in piano che inclinato. Vengono realizzati in diverse dimensioni: lunghezza e larghezza, con guide fisse o regolabili a seconda delle specifiche esigenze del cliente.
                         </p>
                         <div class="product-services-block">
-                            <h4>LA FORNITURA DEL TRASPORTO MODULARE VIENE INTEGRATA CON I SEGUENTI INDISPENSABILI SERVIZI</h4>
-                            <div>
-                                <h5>STUDIO</h5>
-                                <p>L'ufficio tecnico della Bonfatti srl realizza su misura alle richieste del cliente il layout, integrando i propri prodotti modulari con le macchine del cliente per una perfetta riuscita del progetto.</p>
-                            </div>
-                            <div>
-                                <h5>GESTIONE</h5>
-                                <p>La fornitura completa dei componenti elettrici- elettronici- software gestione impianto. Rende sicuro il risultato finale atteso dal cliente.</p>
-                            </div>
-                            <div>
-                                <h5>APPLICAZIONE</h5>
-                                <p>La Bonfatti srl fornisce Il servizio di installazione-collaudo finale della propria fornitura.</p>
+                            <h4 class="services-main-title">LA FORNITURA DEL TRASPORTO MODULARE VIENE INTEGRATA CON I SEGUENTI INDISPENSABILI SERVIZI</h4>
+                            
+                            <div class="services-grid-rectangular">
+                                <div class="service-box">
+                                    <div class="service-header">
+                                        <span class="service-step">FASE 01</span>
+                                        <h5 class="service-title">STUDIO & PROGETTAZIONE</h5>
+                                    </div>
+                                    <div class="service-body">
+                                        <p class="service-description">Il nostro ufficio tecnico specializzato realizza layout personalizzati su misura, integrando i sistemi modulari Bonfatti con le macchine esistenti del cliente. Ogni progetto viene studiato nei minimi dettagli per garantire la perfetta riuscita dell'implementazione industriale.</p>
+                                        <div class="service-specs">
+                                            <div class="spec-item">ANALISI TECNICA APPROFONDITA</div>
+                                            <div class="spec-item">LAYOUT 3D PERSONALIZZATO</div>
+                                            <div class="spec-item">INTEGRAZIONE SEAMLESS</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="service-box">
+                                    <div class="service-header">
+                                        <span class="service-step">FASE 02</span>
+                                        <h5 class="service-title">GESTIONE & CONTROLLO</h5>
+                                    </div>
+                                    <div class="service-body">
+                                        <p class="service-description">Fornitura completa di componenti elettrici, elettronici e software per la gestione intelligente dell'impianto. Il nostro sistema di controllo avanzato garantisce la sicurezza operativa e il raggiungimento dei risultati attesi dal cliente.</p>
+                                        <div class="service-specs">
+                                            <div class="spec-item">COMPONENTI CERTIFICATI CE</div>
+                                            <div class="spec-item">SOFTWARE DI CONTROLLO PROPRIETARIO</div>
+                                            <div class="spec-item">MONITORAGGIO IN TEMPO REALE</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="service-box">
+                                    <div class="service-header">
+                                        <span class="service-step">FASE 03</span>
+                                        <h5 class="service-title">APPLICAZIONE & COLLAUDO</h5>
+                                    </div>
+                                    <div class="service-body">
+                                        <p class="service-description">Bonfatti S.r.l. fornisce il servizio completo di installazione professionale e collaudo finale della fornitura. Il nostro team di tecnici specializzati assicura un'implementazione impeccabile e il perfetto funzionamento del sistema installato.</p>
+                                        <div class="service-specs">
+                                            <div class="spec-item">INSTALLAZIONE PROFESSIONALE</div>
+                                            <div class="spec-item">COLLAUDO CERTIFICATO</div>
+                                            <div class="spec-item">SUPPORTO POST-VENDITA</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                          <a href="#" class="product-cta interactive-sound">Scopri di più sul Trasporto Modulare</a>
