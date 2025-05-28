@@ -2062,32 +2062,5 @@ La soluzione FSC  consente di gestire con un solo operatore, in maniera veloce e
     </script>
 </body>
 </html>
-```
-
-**Modifiche principali apportate al CSS:**
-
-1.  **`.product-variants-grid`**:
-    * `display: flex;`: Cambiato da `grid` per permettere un layout a riga singola.
-    * `flex-wrap: nowrap;`: Assicura che gli elementi rimangano su una sola riga.
-    * `overflow-x: auto;`: Abilita lo scorrimento orizzontale se il contenuto eccede la larghezza.
-    * `padding: 10px 20px 25px 20px;`: Aggiunto padding per dare spazio ai lati e per la scrollbar orizzontale (il padding inferiore è aumentato per la scrollbar).
-    * `-webkit-overflow-scrolling: touch;`: Per uno scorrimento più fluido su dispositivi iOS.
-    * Rimosse le proprietà `grid-template-columns` e `justify-content: center;` che non sono più pertinenti per questo layout flex.
-
-2.  **`.product-variant-block`**:
-    * `min-width: 280px;`: Imposta una larghezza minima per i blocchi prodotto.
-    * `width: 300px;`: Imposta una larghezza preferita.
-    * `max-width: 320px;`: Imposta una larghezza massima.
-    * `flex-shrink: 0;`: Impedisce ai blocchi di restringersi quando lo spazio è limitato, mantenendo la loro larghezza definita.
-
-3.  **Stili per la Scrollbar Orizzontale (Opzionale ma consigliato per l'estetica)**:
-    * Aggiunte regole specifiche per personalizzare l'aspetto della scrollbar orizzontale per le griglie `.product-variants-grid` sui browser basati su WebKit (come Chrome, Safari, Edge).
-
-4.  **Altezza Immagine**:
-    * Ho mantenuto l'altezza dell'immagine a `280px` e `object-fit: contain;` come da modifiche precedenti.
-
-5.  **Percorsi Immagini**:
-    * Ho aggiornato tutti i percorsi delle immagini (es. `src="modulare01.jpg"`) in `src="images/modulare01.jpg"` assumendo che tu abbia spostato le immagini in una cartella `images` come discusso per la messa online. Se le immagini sono ancora nella stessa cartella dell'HTML, dovrai ripristinare i percorsi originali.
-    * Ho anche aggiornato l'URL dell'iframe di Google Maps con un esempio più realistico (dovrai comunque sostituirlo con il tuo codice di incorporamento corretto da Google Maps).
 
 Ora le sezioni dei prodotti che utilizzano la classe `.product-variants-grid` dovrebbero mostrare i prodotti su un'unica riga orizzontale, scorrevole se necessario. Ho anche rimosso il blocco `div` vuoto che avevo notato nella sezione FSC, presumendo fosse un refuso. Se era intenzionale, puoi reinserir
